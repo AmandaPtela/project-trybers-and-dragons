@@ -7,5 +7,4 @@ abstract class Battle {
   }
 }
 
-export default Battle;
- */
+export default Battle; */
