@@ -2,7 +2,7 @@ abstract class Race {
   private _name: string;
   private _dexterity: number;
 
-  constructor(name: string, dexterity: number){ 
+  constructor(name: string, dexterity: number) { 
     this._name = name;
     this._dexterity = dexterity;
   }
@@ -16,13 +16,13 @@ abstract class Race {
   }
 
   static createdRacesInstances(newRace: Race) {
-    const instances = []
+    const instances = [];
     instances.push(newRace);
     const instancesQuantity = instances.length;
-    if(!newRace) throw new Error('Not implemented');
+    if (!newRace) throw new Error('Not implemented');
     return instancesQuantity;
   }
 
   abstract get maxLifePoints(): number;
-};
+}
 export default Race;
