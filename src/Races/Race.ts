@@ -15,12 +15,8 @@ abstract class Race {
     return this._dexterity;
   }
 
-  static createdRacesInstances(newRace: Race) {
-    const instances = [];
-    instances.push(newRace);
-    const instancesQuantity = instances.length;
-    if (!newRace) throw new Error('Not implemented');
-    return instancesQuantity;
+  static createdRacesInstances() {
+    throw new Error('Not implemented');
   }
 
   abstract get maxLifePoints(): number;
