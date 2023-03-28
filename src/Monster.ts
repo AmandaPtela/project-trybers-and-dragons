@@ -4,7 +4,6 @@ class Monster implements SimpleFighter {
   protected _lifePoints: number;
   private _strength: number;
   name: string;
-  static _lifePoints: number;
 
   constructor(name: string) {
     this._lifePoints = 85;
