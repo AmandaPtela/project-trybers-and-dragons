@@ -1,11 +1,13 @@
 import Character from './Character';
+import Monster from './Monster';
+import Dragon from './Dragon';
 
-const daedra = new Character('Daedra');
-// const corki = new Character('Corki');
+// const daedra = new Character('Daedra');
 
-/* console.log('Defesa Daedra', daedra.defense);
-console.log('Ataque', 20);
-console.log('Dano Luta', 20 - daedra.defense); */
-daedra.levelUp();
+const corki = new Monster('Corki');
 
+console.log(corki);
+// daedra.levelUp();
+
+export { Monster, Dragon };
 export default Character;
